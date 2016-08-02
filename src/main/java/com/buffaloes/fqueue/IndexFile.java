@@ -26,7 +26,7 @@ public class IndexFile {
 	
 	private static final int FILE_NO_POS = 0;
 	
-	private static final int OFFSET_POS = Integer.SIZE;
+	private static final int OFFSET_POS = Long.SIZE / Byte.SIZE;
 	
 	public IndexFile(File f) throws IOException {
 		this.randomAccessfile = new RandomAccessFile(f, "rw");
